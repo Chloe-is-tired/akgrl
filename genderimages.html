@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>akgirl's genders</title>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+ 
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+ 
+<style>
+ 
+ table, th, td {
+  
+  
+}
+ 
+ 
+  @font-face {
+    font-family: 'Koden'; 
+    src: url('fonts/KH-Dot-Kodenmachou-16-Ki.ttf')format("truetype");
+}
+    
+    
+    @font-face {
+    font-family: 'Hibiya'; 
+    src: url('fonts/KH-Dot-Hibiya-32.ttf')format("truetype");
+}
+    @font-face {
+    font-family: 'Koblenz'; 
+    src: url("fonts/koblenz-serial-extrabold-regular.ttf")format("truetype");
+    
+}
+ 
+ 
+ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+ 
+body{
+margin: 0;
+background-color: #B79ABB;
+font-family: 'Questrial', sans-serif;
+color: #454257;
+}
+ 
+.container{
+display: flex;
+flex-direction: column;
+width: 100%;
+gap: 0;
+margin-top: -100px;
+}
+ 
+.headerwrapper{
+height: 500px;
+display: flex;
+flex-direction: row;
+position: relative;
+top: 20px;
+}
+ 
+.header{
+flex-basis: 100%;
+background-image: url('banner4.png');
+background-position: center center;
+background-repeat: no-repeat;
+display: flex;
+}
+ 
+.header h1{
+align-self: center;
+margin: 0 auto;
+color: #6FABC6;
+font-size: 110px;
+font-family: 'Hibiya', serif;
+text-shadow: 0px 0px 10px #FFF;
+}
+ 
+.boxwrapper{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+padding-left: 1rem;
+padding-bottom: 1rem;
+position: relative;
+z-index: 1;
+}
+ 
+.sidebars{
+min-width: 100px;
+flex-basis: 15%;
+margin-top: 40px;
+}
+ 
+.sideheaders{
+background-color: #cccade;
+border: 1px solid #F1ECFF;
+box-shadow: 0px 0px 5px #F1ECFF;
+font-weight: normal;
+color: #6A6788;
+font-size: 16px;
+}
+ 
+.middleheaders{
+background-color: #cccade;
+border: 1px solid #cccade;
+box-shadow: 0px 0px 5px #cccade;
+font-weight: normal;
+color: #6A6788;
+font-size: 18px;
+border-radius: 15px 15px 0px 0px;
+margin-bottom: 5px;
+}
+ 
+.sidebox{
+padding: 8px 3px 8px 3px;
+font-size: 13px;
+color: #cccade;
+letter-spacing: 1px;
+}
+ 
+.sidebars ul{
+padding: 0;
+}
+ 
+.sidebars li{
+list-style-type: none;
+border-bottom: 1px solid #cccade;
+margin-bottom: 6px;
+}
+ 
+.sidebars a{
+color: #cccade;
+}
+ 
+.sidebars a:visited{
+color: #cccade;
+}
+ 
+.sidebars a:hover{
+text-shadow: 0px 0px 5px #F1ECFF;
+font-style: normal;
+}
+ 
+.sidebars a:active{
+font-style: italic;
+text-shadow: 0px 0px 5px #F1ECFF;
+}
+ 
+.main{
+flex-basis: 70%;
+min-width: 300px;
+padding: 20px;
+background-color: #F1ECFF;
+border: 1px solid #F1ECFF;
+box-shadow: 0px 0px 10px #F1ECFF;
+border-radius: 65px 65px 0px 0px;
+font-size: 14px;
+}
+ 
+.section{
+margin-bottom: 15px;
+line-height: 1.2;
+
+}
+ 
+#credit a{
+color: #cccade;
+}
+ 
+a{
+color: #48C1CB;
+text-decoration: none;
+}
+ 
+a:visited{
+color: #7992B8;
+}
+ 
+a:hover{
+font-style: italic;
+}
+ 
+a:active{
+font-style: italic;
+}
+ 
+::-webkit-scrollbar{
+width: 8px; 
+}
+ 
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+ 
+::-webkit-scrollbar-thumb{
+background-color: #cccade;
+}
+ 
+#credit{
+font-size: 12px;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+ 
+@media(max-width:685px){
+.headerwrapper{
+height: 268px;
+position: relative;
+top: 0px;
+}
+.header{
+background-size: 100%;
+background-position: top left;
+height: 300px
+}
+.header h1{
+font-size: 40px;
+align-self: center;
+padding-left: 1em;
+}
+.container{
+width: 100%;
+margin-top: 0;
+}
+.boxwrapper{
+display: flex;
+flex-direction: column;
+padding-left: 1em;
+padding-right: 1em;
+}
+.boxes{
+min-width: 100%;
+}
+.sidebox{
+text-align: center;
+}
+.sidebars{
+margin-top: 0;
+}
+.sidebars li{
+display: inline;
+margin: 0;
+border: none;
+}
+}
+ 
+@media(max-width:500px){
+.header h1{
+padding-left: 1.5em;
+}
+}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+<!-- HEADER -->
+<div class="headerwrapper">
+<div class="header">
+<!--<h1>Akgrl's Corner</h1>-->
+</div>
+</div>
+ 
+<div class="boxwrapper">
+ 
+<!-- SIDEBAR LEFT -->
+<div class="boxes sidebar sidebars">
+ 
+<!-- NAV -->
+<div class="nav">
+<h3 class="sideheaders">Navigate</h3>
+<div class="sidebox">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="digicam_gallery">Digicam Gallery</a></li>
+<li><a href="https://akgrl.neocities.org/genderimages">pics that give me gender</a></li>
+<li><a href="guestbook.html">Chatroom</a></li>
+</ul>
+</div>
+</div>
+ 
+<!-- SIDEBAR LEFT BOX 2 
+<h3 class="sideheaders">waaaa</h3> -->
+<div class="sidebox">
+<img src="https://64.media.tumblr.com/245752bc085cec7c1ad2788c34f10275/4888baf26fbb57d4-21/s250x400/c4ae7654de4c6d94f0293997005bfd6c7648312f.gifv" style="opacity:0.9;" width="120">
+
+<img src="ur_sexy.gif" style="opacity:0.9;" width="120">
+
+<img src="blinkiesCafe-DU.gif" style="opacity:0.9;" width="120">
+<img src="doggirl_rights.gif" style="opacity:0.9;" width="120">
+<img src="http://dl.glitter-graphics.net/pub/536/536771xyezxhy3qt.gif" width=120><br>
+<img src="https://blinkies.cafe/b/display/y2k-compliant.gif" style="opacity:0.9;" width="120">
+<img src="https://64.media.tumblr.com/fae8186229754a2892cdd2e420bb3cd1/37901a7869227e54-7c/s1280x1920/5f70e8c2bbbc37b7cbc7b2958f4db408498531a9.gifv" style="opacity:0.9;" width="120">
+
+
+</div>
+ 
+<!-- SIDEBAR LEFT BOX 3 -->
+<!--<h3 class="sideheaders">Header</h3>-->
+<div class="sidebox">
+<img src="maidpixel.png" style="opacity:0.9;" width="120">
+
+</div>
+ 
+</div>
+ 
+<!-- MIDDLE BOX -->
+<div class="boxes main">
+ <img src="gender_logo.png" style="opacity:0.9;" width="150">
+
+<!-- SECTION 1 -->
+<div class="section">
+<!--<h3 id="top" class="middleheaders">Gender Images</h3> -->
+<p>soooo...these are basically just random images I find around the web that make me feel gender. pics that I look at and just go 'god i wish that were me'. these women are probably the reason i keep cutting my hair to keep it short lol. enjoy. maybe youll get an idea of what I look like. 
+</p>
+</div>
+ 
+ 
+ 
+ 
+<!-- SECTION 2 -->
+<div class="section">
+<!--<h3 class="middleheaders">The gender:</h3>-->
+
+
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="gender images/101138996_p0_master1200.jpeg" alt="Pole" title="girls with old car in the winter" width="330">girls with old car in the winter</td>
+    <td><img src="gender images/1684460521117770.png" alt="Pole" title="thinking about hugging boys" width="330">thinking about hugging boys</td>
+    <td><img src="gender images/1684476161353166.png" alt="Pole" title="mentally ill chillin" width="330">mentally ill chillin</td>
+  </tr>
+  <tr>
+    <td><img src="gender images/1684476722996689.png" alt="Pole" title="ymmy helti deanar!" width="330">ymmy helti deanar!</td>
+    <td><img src="gender images/20230201_020536.JPG" alt="Pole" title="hmm wonder what i shud get " width="330">hmm wonder what i shud get </td>
+    <td><img src="gender images/20230204_214322.jpg" alt="Pole" title="dont be a baby! its totally not a devious lair" width="330">"dont be a baby! its totally not a devious lair"</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/20230325_164937.jpg" alt="Pole" title="i miss my boyclothes" width="330">i miss my boyclothes</td>
+  <td><img src="gender images/20230518_092435.jpg" alt="Pole" title="boyish outfit" width="330">boyish outfit</td>
+  <td><img src="gender images/60646520_p0_master1200.jpeg" alt="Pole" title="kitty those leeks a rnt for u!" width="330">kitty those leeks arnt for u!</td>
+   </tr>
+   <tr>
+   <td><img src="gender images/61879076_p0_master1200.jpeg" alt="Pole" title="aight ima fuh witcha" width="330">aight ima fuh witcha</td>
+  <td><img src="gender images/65204496_p0.png" alt="Pole" title="please just touch me" width="330">please just touch me</td>
+  <td><img src="gender images/70064713_p0_master1200.jpeg" alt="Pole" title="sup" width="330">sup</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/71163986_p0_master1200.jpeg" alt="Pole" title="soo whatta wanna do today?" width="330">soo whatta wanna do today?</td>
+  <td><img src="gender images/72387546_p0_master1200.jpeg" alt="Pole" title="this ones just pretty idk what to say" width="330">this ones just pretty idk what to say</td>
+  <td><img src="gender images/72668704_p0_master1200.jpeg" alt="Pole" title="yes i am" width="330">yes i am</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/72955418_p0_master1200.jpeg" alt="Pole" title="who up smokin in the 2418 "birth of a new day" album cover" width="330">who up smokin in the 2418 "birth of a new day" album cover</td>
+  <td><img src="gender images/76393379_p0_master1200.jpeg" alt="Pole" title="k-on + lain + stalker" width="330">k-on + lain + stalker</td>
+  <td><img src="gender images/78085446_p0_master1200.jpeg" alt="Pole" title="shes so me. i miss winter" width="330">shes so me. i miss winter</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/78085845_p0_master1200.jpeg" alt="Pole" title="f11nster if she lives in sibera 100 years ago" width="330">f11nster if she lives in sibera 100 years ago</td>
+  <td><img src="gender images/78085696_p0_master1200.jpeg" alt="Pole" title="ducki! i lluv dukiys!!" width="330">ducki! i lluv dukiys!!</td>
+  <td><img src="gender images/7821CB3B-9E0E-4CCF-B1BF-5C487958D335.JPG" alt="Pole" title="a cute boy sent me this one and said it reminded him of me. we're so winning" width="330">a cute boy sent me this one and said it reminded him of me. we're so winning</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/80584449_p0_master1200.jpeg" alt="Pole" title="same as the f11nster one but further into her transition" width="330">same as the f11nster one but further into her transition</td>
+  <td><img src="gender images/83100076_p0_master1200.jpeg" alt="Pole" title="cia anime girl pullin up to fucc sum shit" width="330">cia anime girl pullin up to fucc sum shit</td>
+  <td><img src="gender images/83122659_p0_master1200.jpeg" alt="Pole" title="that one japanese r6 map" width="330">that one japanese r6 map</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/desktop-wallpaper-anime-anime-girls-dark-room-sitting-interior-•-for-you-pc-anime-dark.jpeg" alt="Pole" title="when the rocket nextdoor launches, itll be so loud my entire body will literally liquify but its fine" width="330">when the rocket nextdoor launches, itll be so loud my entire body will literally liquify but its fine</td>
+  <td><img src="gender images/FqZg_2saUAAsPBU.jpeg" alt="Pole" title="me and who" width="330">me and who</td>
+  <td><img src="gender images/image0.jpg" alt="Pole" title="yea what u need" width="330">yea what u need</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/IMG_6721.jpeg" alt="Pole" title="idek which one i am but its cute" width="330">idek which one i am but its cute</td>
+  <td><img src="gender images/IMG_9761.png" alt="Pole" title="hhhhi uhh wats up!? " width="330">hhhhi uhh wats up!? </td>
+  <td><img src="gender images/IMG_9762.png" alt="Pole" title="sstap looking im tryna change into my jersey mikes uniform" width="330" >sstap looking im tryna change into my jersey mikes uniform</td>
+  </tr>
+  <tr>
+  <td><img src="gender images/IMG_9763.png" alt="Pole" title="sleepy girls should just sleep" width="330">sleepy girls should just sleep</td>
+  <td><img src="gender images/IMG_9764.png" alt="Pole" title="me at my job interview lul" width="330" >me at my job interview lul</td>
+  <td><img src="gender images/IMG_9765.png" alt="Pole" title="<<< same as teh other one lol" width="330" > same as teh other one lol</td>
+  
+
+</table>
+
+
+yea im a degenerate thx for looking tho :p
+<br>
+<a href="#top">back to top</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+ 
+
+ 
+
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<div id="credit"><a href="https://repth.neocities.org/index.html">©repth</a></div>
+ 
+</body>
+ 
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digicam gallery</title>
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+ 
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+ 
+<style>
+ 
+ table, th, td {
+  
+  
+}
+ 
+ 
+  @font-face {
+    font-family: 'Koden'; 
+    src: url('fonts/KH-Dot-Kodenmachou-16-Ki.ttf')format("truetype");
+}
+    
+    
+    @font-face {
+    font-family: 'Hibiya'; 
+    src: url('fonts/KH-Dot-Hibiya-32.ttf')format("truetype");
+}
+    @font-face {
+    font-family: 'Koblenz'; 
+    src: url("fonts/koblenz-serial-extrabold-regular.ttf")format("truetype");
+    
+}
+ 
+ 
+ 
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+ 
+body{
+margin: 0;
+background-color: #B79ABB;
+font-family: 'Questrial', sans-serif;
+color: #454257;
+}
+ 
+.container{
+display: flex;
+flex-direction: column;
+width: 100%;
+gap: 0;
+margin-top: -100px;
+}
+ 
+.headerwrapper{
+height: 500px;
+display: flex;
+flex-direction: row;
+position: relative;
+top: 20px;
+}
+ 
+.header{
+flex-basis: 100%;
+background-image: url('banner4.png');
+background-position: center center;
+background-repeat: no-repeat;
+display: flex;
+}
+ 
+.header h1{
+align-self: center;
+margin: 0 auto;
+color: #6FABC6;
+font-size: 110px;
+font-family: 'Hibiya', serif;
+text-shadow: 0px 0px 10px #FFF;
+}
+
+.header2{
+flex-basis: 100%;
+background-color: #cccade;
+border: 1px solid #cccade;
+box-shadow: 0px 0px 5px #cccade;
+background-repeat: no-repeat;
+display: flex;
+}
+ 
+.header2 h1{
+
+align-self: center;
+margin: 0 auto;
+color: #6FABC6;
+font-size: 110px;
+font-family: 'Hibiya', serif;
+text-shadow: 0px 0px 10px #FFF;
+}
+ 
+.boxwrapper{
+display: flex;
+flex-direction: row;
+gap: 1rem;
+padding-left: 1rem;
+padding-bottom: 1rem;
+position: relative;
+z-index: 1;
+}
+ 
+.sidebars{
+min-width: 100px;
+flex-basis: 15%;
+margin-top: 40px;
+}
+ 
+.sideheaders{
+background-color: #cccade;
+border: 1px solid #F1ECFF;
+box-shadow: 0px 0px 5px #F1ECFF;
+font-weight: normal;
+color: #6A6788;
+font-size: 16px;
+}
+ 
+.middleheaders{
+background-color: #cccade;
+border: 1px solid #cccade;
+box-shadow: 0px 0px 5px #cccade;
+font-weight: normal;
+color: #6A6788;
+font-size: 18px;
+border-radius: 15px 15px 0px 0px;
+margin-bottom: 5px;
+}
+ 
+.sidebox{
+padding: 8px 3px 8px 3px;
+font-size: 13px;
+color: #cccade;
+letter-spacing: 1px;
+}
+ 
+.sidebars ul{
+padding: 0;
+}
+ 
+.sidebars li{
+list-style-type: none;
+border-bottom: 1px solid #cccade;
+margin-bottom: 6px;
+}
+ 
+.sidebars a{
+color: #cccade;
+}
+ 
+.sidebars a:visited{
+color: #cccade;
+}
+ 
+.sidebars a:hover{
+text-shadow: 0px 0px 5px #F1ECFF;
+font-style: normal;
+}
+ 
+.sidebars a:active{
+font-style: italic;
+text-shadow: 0px 0px 5px #F1ECFF;
+}
+ 
+.main{
+flex-basis: 70%;
+min-width: 300px;
+padding: 20px;
+background-color: #F1ECFF;
+border: 1px solid #F1ECFF;
+box-shadow: 0px 0px 10px #F1ECFF;
+border-radius: 65px 65px 0px 0px;
+font-size: 14px;
+}
+ 
+.section{
+margin-bottom: 15px;
+line-height: 1.2;
+
+}
+ 
+#credit a{
+color: #cccade;
+}
+ 
+a{
+color: #48C1CB;
+text-decoration: none;
+}
+ 
+a:visited{
+color: #7992B8;
+}
+ 
+a:hover{
+font-style: italic;
+}
+ 
+a:active{
+font-style: italic;
+}
+ 
+::-webkit-scrollbar{
+width: 8px; 
+}
+ 
+::-webkit-scrollbar-track{
+background-color: transparent;
+}
+ 
+::-webkit-scrollbar-thumb{
+background-color: #cccade;
+}
+ 
+#credit{
+font-size: 12px;
+position: fixed;
+bottom: 0;
+right: 0;
+}
+ 
+@media(max-width:685px){
+.headerwrapper{
+height: 268px;
+position: relative;
+top: 0px;
+}
+.header{
+background-size: 100%;
+background-position: top left;
+height: 300px;
+
+}
+.header h1{
+font-size: 40px;
+align-self: center;
+padding-left: 1em;
+}
+.container{
+width: 100%;
+margin-top: 0;
+}
+.boxwrapper{
+display: flex;
+flex-direction: column;
+padding-left: 1em;
+padding-right: 1em;
+}
+.boxes{
+min-width: 100%;
+}
+.sidebox{
+text-align: center;
+}
+.sidebars{
+margin-top: 0;
+}
+.sidebars li{
+display: inline;
+margin: 0;
+border: none;
+}
+}
+ 
+@media(max-width:500px){
+.header h1{
+padding-left: 1.5em;
+}
+}
+ 
+</style>
+ 
+</head>
+ 
+<body>
+ 
+<div class="container">
+ 
+<!-- HEADER -->
+<div class="headerwrapper">
+<div class="header">
+<h1></h1>
+</div>
+</div>
+ 
+<div class="boxwrapper">
+ 
+<!-- SIDEBAR LEFT -->
+<div class="boxes sidebar sidebars">
+ 
+<!-- NAV -->
+<div class="nav">
+<h3 class="sideheaders">Navigate</h3>
+<div class="sidebox">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="digicam_gallery">Digicam Gallery</a></li>
+<li><a href="https://akgrl.neocities.org/genderimages">pics that give me gender</a></li>
+<li><a href="guestbook.html">Chatroom</a></li>
+</ul>
+</div>
+</div>
+ 
+<!-- SIDEBAR LEFT BOX 2 
+<h3 class="sideheaders">waaaa</h3> -->
+<div class="sidebox">
+<img src="https://64.media.tumblr.com/245752bc085cec7c1ad2788c34f10275/4888baf26fbb57d4-21/s250x400/c4ae7654de4c6d94f0293997005bfd6c7648312f.gifv" style="opacity:0.9;" width="120">
+
+<img src="ur_sexy.gif" style="opacity:0.9;" width="120">
+
+<img src="blinkiesCafe-DU.gif" style="opacity:0.9;" width="120">
+<img src="doggirl_rights.gif" style="opacity:0.9;" width="120">
+<img src="http://dl.glitter-graphics.net/pub/536/536771xyezxhy3qt.gif" width=120><br>
+<img src="https://blinkies.cafe/b/display/y2k-compliant.gif" style="opacity:0.9;" width="120">
+<img src="https://64.media.tumblr.com/fae8186229754a2892cdd2e420bb3cd1/37901a7869227e54-7c/s1280x1920/5f70e8c2bbbc37b7cbc7b2958f4db408498531a9.gifv" style="opacity:0.9;" width="120">
+
+
+</div>
+ 
+<!-- SIDEBAR LEFT BOX 3 -->
+<!--<h3 class="sideheaders">Header</h3>-->
+<div class="sidebox">
+<img src="maidpixel.png" style="opacity:0.9;" width="120">
+<!--<img src="pixelmaid2(trans).png" style="opacity:0.9;" width="120">
+<img src="pixelmaid3.png" style="opacity:0.9;" width="120"> -->
+
+
+</div>
+ 
+</div>
+ 
+<!-- MIDDLE BOX -->
+<div class="boxes main">
+ <img src="digi_logo.png" style="opacity:0.9;" width="120">
+
+<!-- SECTION 1 -->
+<div class="section">
+<!--<h3 id="top" class="middleheaders">Digicam Gallery</h3> -->
+<h3>alright. this is the real meat and potatoes of this site. I present a gallery of my favorite digicam photos I've taken, all on my mom's old Canon Powershot SD400 that she used to take all my baby pictures. Ill leave a little bookmark spot so you can jump around. Enjoy your stay.
+</h3>
+</div>
+ 
+ 
+ <h4> use this table to jump around to different albums!<h4>
+<table style="width:40%">
+  <tr>
+    <th><a href="#early">Early Days in Chicago</a></th>
+    <th><a href="#dreamin">California Dreamin</a></th>
+    <th><a href="#sound">Sound Walk</a></th>
+    <th><a href="#ess">Experimental Sound Class</a></th>
+    <!--<th><img src="pixelmaid2(trans).png" width="50"></th>-->
+  </tr>
+</table>
+ 
+ 
+<!-- SECTION 2 -->
+<div class="section">
+<h2 id="early" class="header2">Early Days in Chicago:</h2>
+
+
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="https://i.imgur.com/vqphmt2.jpg" title="source: imgur.com" width="330"></td>
+    <td><img src="https://i.imgur.com/QPmKH3I.jpg" title="source: imgur.com" width="330"></td>
+    <td><img src="https://i.imgur.com/sXd62fX.jpg" title="source: imgur.com" width="330"></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.imgur.com/XJBLR4Z.jpg" title="source: imgur.com" width="300"></td>
+    <td><img src="https://i.imgur.com/JjkOkXC.jpg" title="source: imgur.com" width="300"></td>
+    <td><img src="https://i.imgur.com/ll9W2Ga.jpg" title="source: imgur.com" width="300"></td>
+  </tr>
+  <tr>
+   <td><img src="https://i.imgur.com/PwvIoYE.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/Lc3tctn.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/Kb7oKZF.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/V8fnIRa.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/tFTgrru.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/xGX0ZPH.jpg" width="300"></td>
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/NSa8d31.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/gJVKsCq.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/J6sIuyU.jpg" width="300"></td>  
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/pHnklQg.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/yDTluzK.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/sYWkaQO.jpg" width="300"></td>
+  <tr>
+  <td><img src="https://i.imgur.com/aNYNBKj.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/4CzqTGB.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/XxSQO9q.jpg" width="300"></td>
+  </tr>
+  
+  
+  
+</table>
+
+<a href="#top">back to top</a>
+
+<h2 id="dreamin" class="header2">California Dreamin':</h2>
+<table style="width:100%">
+
+
+<tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <td><img src="https://i.imgur.com/ARWStr5.jpg" width="330"></td>
+    <td><img src="https://i.imgur.com/qP74I7T.jpg" width="330"></td>
+    <td><img src="https://i.imgur.com/vslh8Kh.jpg" width="330"></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.imgur.com/9tHgXHN.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/0K4f3tw.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/oOLjXiI.jpg" width="300"></td>
+  </tr>
+  <tr>
+   <td><img src="https://i.imgur.com/ZmzDatz.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/w7m67LF.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/vG0LX0K.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/Xu5Rgt2.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/CTmD1dW.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/st6CtgV.jpg" width="300"></td>
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/UDRn0YC.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/X1Oxl58.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/gdUa405.jpg" width="300"></td>  
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/ldxAfOr.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/DfUV6ig.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/JlPYNgH.jpg" width="300"></td>
+  <tr>
+  <td><img src="https://i.imgur.com/B0E2fuw.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/4i2BOGu.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/fEIQ08E.jpg" width="300"></td>
+  </tr>
+                <tr>
+   <td><img src="https://i.imgur.com/aQHWiqH.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/qoJvpHv.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/gZeXC3c.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/QlO33rx.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/IxH1mF7.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/6siQKlx.jpg" width="300"></td>
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/K27hu6s.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/bNGonlB.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/dJwRDsq.jpg" width="300"></td>  
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/rFfhqP9.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/lhxtge3.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/3bNFhz7.jpg" width="300"></td>
+  <tr>
+  <td><img src="https://i.imgur.com/k5M1Mmv.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/fUS5WYB.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/tavc0iS.jpg" width="300"></td>
+  </tr>
+    <tr>
+   <td><img src="https://i.imgur.com/jSHNgHc.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/8rSOOYH.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/OPAhCSK.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/ZWS9Gyc.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/honxiAv.jpg" width="300"></td>
+  </tr>
+ </table>
+ 
+ 
+  <h2 id="sound" class="header2">Sound Walk':</h2><a href="#top">back to top</a>
+<table style="width:100%">
+
+
+  <tr>
+    <td><img src="https://i.imgur.com/G0rC1jZ.jpg" width="330"></td>
+    <td><img src="https://i.imgur.com/zd050Ea.jpg" width="330"></td>
+    <td><img src="https://i.imgur.com/NwUKsqB.jpg" width="330"></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.imgur.com/1q45in9.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/Ae47HJI.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/tbPIJwG.jpg" width="300"></td>
+  </tr>
+  <tr>
+   <td><img src="https://i.imgur.com/7Wr4MHw.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/Ecy6rVI.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/lU4xRWv.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/LBM2iiG.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/DNYitkT.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/R08RM4e.jpg" width="300"></td>
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/aB6WrMl.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/GoXjPR5.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/SZyULIx.jpg" width="300"></td>  
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/rkIuKpp.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/NGGUFAJ.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/5Kbqpej.jpg" width="300"></td>
+  <tr>
+  <td><img src="https://i.imgur.com/WARxtXB.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/Ve8s11j.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/po61fPE.jpg" width="300"></td>
+  </tr>
+                <tr>
+   <td><img src="https://i.imgur.com/qJqCUQO.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/nSosbkN.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/KLNVmOV.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/sgQAhI7.jpg" width="300"></td>
+ </tr>
+
+
+</table>
+<a href="#top">back to top</a>
+
+<h2 id="ess" class="header2">Experimental Sound Class:</h2>
+<table style="width:100%">
+
+ <tr>
+    <td><img src="https://i.imgur.com/uXowsQG.jpg" width="330"></td>
+    <td><img src="https://i.imgur.com/wC85NEf.jpg" width="330"></td>
+    <td><img src="https://i.imgur.com/FyrcmeJ.jpg" width="330"></td>
+  </tr>
+  <tr>
+    <td><img src="https://i.imgur.com/q7ixnXt.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/XjdbnK2.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/RCTgNIH.jpg" width="300"></td>
+  </tr>
+  <tr>
+   <td><img src="https://i.imgur.com/Jy1UF1J.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/1p5U72F.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/Qi1CEUR.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/Dz35zgs.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/fd3keQI.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/EzSdnAy.jpg" width="300"></td>
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/sQ0qT1n.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/5jDuJ5J.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/PNWA8VO.jpg" width="300"></td>  
+  </tr>
+  <tr>
+  <td><img src="https://i.imgur.com/QsOwszt.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/DxZEBLo.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/021FFl3.jpg" width="300"></td>
+  <tr>
+  <td><img src="https://i.imgur.com/5dl5Qih.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/BsKZySC.jpg" width="300"></td>
+  <td><img src="https://i.imgur.com/v4jG5HS.jpg" width="300"></td>
+  </tr>
+                <tr>
+   <td><img src="https://i.imgur.com/pexfm1h.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/9g8RDio.jpg" width="300"></td>
+    <td><img src="https://i.imgur.com/REslg21.jpg" width="300"></td>
+   </tr>
+   <tr>
+   <td><img src="https://i.imgur.com/GRzuO2j.jpg" width="300"></td>
+ </tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+ 
+
+ 
+
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+<div id="credit"><a href="https://repth.neocities.org/index.html">©repth</a></div>
+ 
+</body>
+ 
+</html>
